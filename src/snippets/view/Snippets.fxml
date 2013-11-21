@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="480.0" prefWidth="640.0" xmlns:fx="http://javafx.com/fxml" fx:controller="snippets.SnippetsViewController">
+  <children>
+    <SplitPane dividerPositions="0.34796238244514105" focusTraversable="true" prefHeight="480.0" prefWidth="640.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <items>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+          <children>
+            <TilePane alignment="CENTER_LEFT" hgap="17.0" layoutX="5.0" layoutY="8.0" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefColumns="3" prefHeight="29.0" prefRows="1" prefTileHeight="21.0" prefTileWidth="55.0" prefWidth="200.0">
+              <children>
+                <Button fx:id="newButton" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#handleNewButtonAction" prefWidth="55.0" text="New" />
+                <Button fx:id="editButton" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#handleEditButtonAction" text="Edit" />
+                <Button fx:id="deleteButton" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#handleDeleteButtonAction" text="Delete" />
+              </children>
+            </TilePane>
+            <ListView fx:id="snippetListView" layoutX="5.0" layoutY="42.0" prefHeight="422.0" prefWidth="200.0" />
+          </children>
+        </AnchorPane>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+          <children>
+            <TextArea fx:id="codeTextArea" editable="false" layoutX="14.0" layoutY="42.0" prefHeight="422.0" prefWidth="395.0" wrapText="true" />
+          </children>
+        </AnchorPane>
+      </items>
+    </SplitPane>
+  </children>
+</AnchorPane>
